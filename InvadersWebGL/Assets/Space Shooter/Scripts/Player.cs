@@ -70,7 +70,7 @@ public class Player : MonoBehaviour
 
         ApplyBounds();
 
-        Shoot();
+        // Shoot();
 
         Invecivel();
 
@@ -98,6 +98,12 @@ public class Player : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("PlayerShoot");
         //Physics2D.IgnoreLayerCollision(6, 7, false);
 
+    }
+
+    public void ShootButton()
+    {
+        Instantiate(shootPrefab, shootPivot.position, shootPivot.rotation);
+        FindObjectOfType<AudioManager>().Play("PlayerShoot");
     }
 
     private void Move()
