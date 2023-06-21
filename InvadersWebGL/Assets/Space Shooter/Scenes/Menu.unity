@@ -429,7 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdef4ad5501bec449965963606473f1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cena: Cutscene
+  cena: Game
   optionsPanel: {fileID: 403794902}
   menuPanel: {fileID: 1598579734}
   tutorialPanel: {fileID: 1992329248}

@@ -15,9 +15,18 @@ public class SoundController : MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
-        sliderMaster.value = PlayerPrefs.GetFloat("Master");
-        sliderSFX.value = PlayerPrefs.GetFloat("SFX");
-        sliderMusic.value = PlayerPrefs.GetFloat("Music");
+        if (sliderMaster != null)
+        {
+            sliderMaster.value = PlayerPrefs.GetFloat("Master");
+        }
+        if (sliderSFX != null)
+        {
+            sliderSFX.value = PlayerPrefs.GetFloat("SFX");
+        }
+        if (sliderMusic != null)
+        {
+            sliderMusic.value = PlayerPrefs.GetFloat("Music");
+        }
     }
 
     // Update is called once per frame

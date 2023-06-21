@@ -440,7 +440,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &73347644
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -457,7 +457,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &73347645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -568,7 +568,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 237635065}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: ShootPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -795,7 +795,7 @@ RectTransform:
   - {fileID: 1977626524}
   - {fileID: 1050023164}
   m_Father: {fileID: 1975212890}
-  m_RootOrder: 1
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2657,7 +2657,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1973412093
-  m_SortingLayer: -1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4698f369eb4d5304fa52d6379d84d35d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3355,7 +3355,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1973412093
-  m_SortingLayer: -1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c1871cae5d1a28f488d79ec72e75f5c9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4462,7 +4462,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1292129619}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: DeathPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4665,7 +4665,7 @@ RectTransform:
   m_Children:
   - {fileID: 607547866}
   m_Father: {fileID: 1975212890}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4746,7 +4746,7 @@ RectTransform:
   - {fileID: 750420700}
   - {fileID: 1928895524}
   m_Father: {fileID: 1975212890}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5702,7 +5702,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1973412093
-  m_SortingLayer: -1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4698f369eb4d5304fa52d6379d84d35d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5990,7 +5990,7 @@ GameObject:
   - component: {fileID: 1863371426}
   - component: {fileID: 1863371425}
   - component: {fileID: 1863371429}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -6094,8 +6094,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 846075789
-  m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: b55ada655881ec8499364e77c36b59eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6252,7 +6252,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1973412093
-  m_SortingLayer: -1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7540aeb1d93622a4198f76c77c8d514a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6274,7 +6274,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1921172028}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: InitialPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6479,8 +6479,8 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 532539653
-  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 15
   m_TargetDisplay: 0
 --- !u!224 &1975212890
 RectTransform:
@@ -6495,12 +6495,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 746265795}
-  - {fileID: 406681273}
   - {fileID: 1317209674}
+  - {fileID: 1338434391}
   - {fileID: 1812244269}
   - {fileID: 27899741}
   - {fileID: 360926938}
-  - {fileID: 1338434391}
+  - {fileID: 406681273}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6541,7 +6541,7 @@ MonoBehaviour:
   takingAway: 0
 --- !u!95 &1975212893
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6558,7 +6558,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &1975212894
 MonoBehaviour:
   m_ObjectHideFlags: 0
