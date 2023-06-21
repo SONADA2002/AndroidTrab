@@ -1,0 +1,40 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BulletScript : MonoBehaviour
+{
+
+    public float speed = 5f;
+    public float deactivate_Timer = 3f;
+
+    [HideInInspector]
+    public bool is_EnemyBullet = false;
+
+    void Start()
+    {
+
+        if (is_EnemyBullet)
+            speed *= -1f; 
+        Invoke("DeactiveGameObject", deactivate_Timer);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        Move();
+    }
+    
+    void Move()
+    {
+        Vector3 temp = transform.position;
+        temp.x += speed * Time.deltaTime;
+        transform.position = temp;
+    }
+
+    void DeactivateGameObject()
+    {
+        gameObject.SetActive(false);
+    }
+
+}
