@@ -47,6 +47,10 @@ public class Player : MonoBehaviour
     [Header("UI")]
     public GameObject gameOverPanel;
 
+    bool buttonRight;
+    bool buttonLeft;
+    bool buttonUp;
+    bool buttonDown;
     
 
     private void Awake()
@@ -74,7 +78,10 @@ public class Player : MonoBehaviour
 
         Invecivel();
 
-        
+        MoveRight();
+        MoveLeft();
+        MoveUp();
+        MoveDown();
 
     }
 
@@ -126,7 +133,91 @@ public class Player : MonoBehaviour
         transform.Translate(move);
     }
 
-     private void ApplyBounds(){
+    #region MoveUpButton
+    void MoveUp()
+    {
+        if (buttonUp == true)
+        {
+            var move = new Vector3(0, 1f * moveSpeed * Time.deltaTime, 0);
+
+            transform.Translate(move);
+        }
+    }
+    public void MoveUpPointerUp()
+    {
+        buttonUp = false;
+    }
+
+    public void MoveUpPointerDown()
+    {
+        buttonUp = true;
+    }
+    #endregion
+
+    #region MoveLeftButton
+    void MoveLeft()
+    {
+        if (buttonLeft == true)
+        {
+            var move = new Vector3(-1f * moveSpeed * Time.deltaTime, 0, 0);
+
+            transform.Translate(move);
+        }
+    }
+    public void MoveLeftPointerUp()
+    {
+        buttonLeft = false;
+    }
+
+    public void MoveLeftPointerDown()
+    {
+        buttonLeft = true;
+    }
+    #endregion
+
+    #region MoveRightButton
+    void MoveRight()
+    {
+        if (buttonRight == true)
+        {
+            var move = new Vector3(1f * moveSpeed * Time.deltaTime, 0, 0);
+
+            transform.Translate(move);
+        }
+    }
+    public void MoveRightPointerUp()
+    {
+        buttonRight = false;
+    }
+
+    public void MoveRightPointerDown()
+    {
+        buttonRight = true;
+    }
+    #endregion
+
+    #region MoveDownButton
+    void MoveDown()
+    {
+        if (buttonDown == true)
+        {
+            var move = new Vector3(0, -1f * moveSpeed * Time.deltaTime, 0);
+
+            transform.Translate(move);
+        }
+    }
+    public void MoveDownPointerUp()
+    {
+        buttonDown = false;
+    }
+
+    public void MoveDownPointerDown()
+    {
+        buttonDown = true;
+    }
+    #endregion
+
+    private void ApplyBounds(){
 
         var minX = -playerBounds.bounds.extents.x + playerBounds.offset.x + playerBounds.transform.position.x;
         var maxX = playerBounds.bounds.extents.x + playerBounds.offset.x + playerBounds.transform.position.x;
